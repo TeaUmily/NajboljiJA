@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Najbolji JA</string>
+
+
+    //CONTENT DESCRIPTION
+    <string name="logo_image">logo image</string>
+    <string name="email">Email</string>
+    <string name="password">Lozinka</string>
+    <string name="login">PRIJAVI SE</string>
+    <string name="countinue_without_login">Nastavi bez prijave</string>
+    <string name="here">OVDJE</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="know_each_other_better_description">Kažu da upoznavanje i nije\nbaš lako, zato odgovori na\nova pitanja i vidjet ćeš da\nto ne mora uvijek biti tako!</string>
+    <string name="know_each_other_better_title">BOLJE SE UPOZNAJMO</string>
+    <string name="start">KRENI</string>
+    <string name="photo_challenge">FOTO IZAZOV</string>
+    <string name="photo_challenge_description">Svaka slika izazov je jedan,\nnabaci osmjeh i za razne\nsituacije budi spreman!</string>
+</resources>
