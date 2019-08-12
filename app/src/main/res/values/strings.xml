@@ -1,7 +1,6 @@
 <resources>
     <string name="app_name">Najbolji JA</string>
 
-
     //CONTENT DESCRIPTION
     <string name="logo_image">logo image</string>
     <string name="email">Email</string>
@@ -10,9 +9,73 @@
     <string name="countinue_without_login">Nastavi bez prijave</string>
     <string name="here">OVDJE</string>
     <string name="title_activity_home">HomeActivity</string>
-    <string name="know_each_other_better_description">Kažu da upoznavanje i nije\nbaš lako, zato odgovori na\nova pitanja i vidjet ćeš da\nto ne mora uvijek biti tako!</string>
-    <string name="know_each_other_better_title">BOLJE SE UPOZNAJMO</string>
     <string name="start">KRENI</string>
-    <string name="photo_challenge">FOTO IZAZOV</string>
-    <string name="photo_challenge_description">Svaka slika izazov je jedan,\nnabaci osmjeh i za razne\nsituacije budi spreman!</string>
+    <string name="login_error_message">Greška u prijavi.</string>
+    <string name="login_message">Uspješna prijava!</string>
+    <string name="logout">ODJAVI SE</string>
+    <string name="questions">Pitanja</string>
+    <string name="quiz">KVIZ</string>
+    <string name="save">SPREMI</string>
+    <string name="edit">UREDI</string>
+    <string name="how_good_you_know_me">Koliko me poznaješ?</string>
+    <string name="start_quiz">ZAPOČNI KVIZ</string>
+    <string name="your_answer">Upiši odgovor</string>
+    <string name="save_answers">Spremi odgovore</string>
+    <string name="empty_fields">Email i lozinka nisu uneseni!</string>
+    <string name="empty_email_field">Email nije unesen!</string>
+    <string name="empty_password_field">Lozinka nije unesena!</string>
+    <string name="no_internet_connection">Nema internetske konekcije.</string>
+    <string name="no_internet">Nema interneta!</string>
+    <string name="error_occured">Dogodila se pogreška.</string>
+    <string name="whoops">WHOOPS!</string>
+    <string name="check_internet_connection_and_try_again">Provjeri internetsku konekciju i pokušaj ponovno.</string>
+    <string name="try_again">POKUŠAJ PONOVNO</string>
+    <string name="my_answers">Moji odgovori</string>
+    <string name="mentor">Mentor</string>
+    <string name="child">Dijete</string>
+    <string name="successfully_stored">Uspješno spremljeno.</string>
+    <string name="correct">TOČNO</string>
+    <string name="wrong">NETOČNO</string>
+    <string name="time">vrijeme:</string>
+    <string name="quiz_fnished">KVIZ JE ZAVRŠIO</string>
+    <string name="number_of_correct_answers">Broj točnih odgovora:</string>
+    <string name="result">Rezultat:</string>
+    <string name="back">Nazad</string>
+    <string name="instructions">UPUTE</string>
+    <string name="quiz_instructions_text">Osoba čiji je kviz odabran postavlja pitanja te označuje je li dan odgovor točan ili netočan. Za svako pitanje na raspolaganju je 8 sekundi. Započni kviz i dobro se zabavi!</string>
+    <string name="challenge_completed">IZAZOV ZAVRŠEN</string>
+    <string name="bravo">BRAVO!</string>
+
+    //INTRODUCTION
+    <string name="introduction_description">Kažu da upoznavanje i nije\nbaš lako, zato odgovori na\nova pitanja i vidjet ćeš da\nto ne mora uvijek biti tako!</string>
+    <string name="introduction_title">BOLJE SE UPOZNAJMO</string>
+    <string name="Introduction_instructions">Za uspješno rješavanje ovoga\n izazova potrebno je:\n\n   \t - odgovoriti na sva pitanja\n\t - riješiti kviz\n\nKviz se otključava tek kada\nsu upisani odgovori na sva pitanja</string>
+    <string name="number_of_wrong_answers">Broj netočnih odgovora:</string>
+    <string name="empty_answer">Odgovor ne može biti prazan.</string>
+    <string name="introduction_challenge_completed_message">Odgovorili ste na sva pitanja i time ispunili ovaj zadatak! Sada vam je otključan kviz kojim možete provjeriti koliko se dobro poznajete. Sretno!</string>
+    //questions
+    <string name="hobies">Moji hobiji su…</string>
+    <string name="dream_job">Po meni idealno zanimanje je…</string>
+    <string name="pets">Moji ljubimci su…</string>
+    <string name="role_model">Uzor mi je…</string>
+    <string name="nickname">Svi me zovu nadimkom…</string>
+    <string name="favorite_meal">Za ručak najviše volim…</string>
+    <string name="favorite_memory">Uvijek se rado sjećam…</string>
+    <string name="favorite_subject">Od svih najdraži šk predmet mi je…</string>
+    <string name="favorite_sport">Sport koji najviše volim je…</string>
+    <string name="never_done">Nisam nikad…</string>
+    <string name="favorite_color">Omiljena boja mi je…</string>
+    <string name="characteristic_i_love">Osobina koju volim na sebi je…</string>
+    <string name="free_time">Slobodno vrijeme provodim tako da…</string>
+    <string name="tv_choice">Na TV-u najrađe gledam…</string>
+
+    //PHOTO CHALLENGE
+    <string name="photo_challenge_title">FOTO IZAZOV</string>
+    <string name="photo_challenge_description">Svaka slika izazov je jedan,\nnabaci osmjeh i za razne\nsituacije budi spreman!\n</string>
+
+
+    //LOOK UPSIDE DOWN
+    <string name="look_upside_down_title">POGLED NAOPAČKE</string>
+    <string name="look_upside_down_description">Kad različite slike budeš\nvidio sada ti zapiši što ti\nprvo na pamet pada!\n</string>
+
 </resources>

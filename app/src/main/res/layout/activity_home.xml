@@ -1,41 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context=".ui.home.HomeActivity">
+    tools:context=".ui.home.activity.HomeActivity">
 
-    <android.support.design.widget.AppBarLayout
+    <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         app:elevation="0dp">
 
-        <android.support.v7.widget.Toolbar
+        <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="@color/white"
-            app:title="PERICA I IVO"
-            android:theme="@style/toolbarTextStyle"
-            app:titleTextColor="@color/textColorPrimary"
-            />
+            android:layout_height="50dp"
+            android:background="@color/white">
 
-    </android.support.design.widget.AppBarLayout>
+            <TextView
+                android:id="@+id/tv_MentorChildName"
+                style="@style/DosisBold24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:gravity="center"
+                tools:text="Dijete i Mentor"
+                android:textColor="@color/textColorPrimary" />
 
-    <android.support.v4.view.ViewPager
+            <ImageView
+                android:id="@+id/btnLogout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/ic_logout" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <View
+        android:layout_width="340dp"
+        android:layout_height="3dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/toolbar_bottom_line_shape">
+    </View>
+
+    <androidx.viewpager.widget.ViewPager
         android:id="@+id/viewPager"
         android:layout_width="match_parent"
-        android:layout_height="430dp"
-        android:background="@drawable/background"
-        android:backgroundTint="#4FFF"
+        android:layout_height="500dp"
         android:layout_gravity="center"
+        android:backgroundTint="#4FFF"
         android:clipToPadding="false"
         android:overScrollMode="never"
-         android:paddingEnd="@dimen/card_padding"
-        android:paddingLeft="@dimen/card_padding"
-        android:paddingRight="@dimen/card_padding"
-        android:paddingStart="@dimen/card_padding" />
+        android:paddingLeft="@dimen/fragment_padding"
+        android:paddingTop="80dp"
+        android:paddingRight="@dimen/fragment_padding" />
 
-</android.support.design.widget.CoordinatorLayout>
+    <include layout="@layout/layout_loader" />
+    <include layout="@layout/layout_no_internet"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

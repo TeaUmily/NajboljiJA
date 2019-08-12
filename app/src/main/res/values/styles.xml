@@ -6,22 +6,67 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
-        <item name="android:statusBarColor">@color/statusBarColor</item>
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
         <item name="android:fontFamily">@font/dosis</item>
+        <item name="android:colorControlNormal">@color/toolbarTextColor</item>
     </style>
 
-    <style name="HintTextStyle" parent="TextAppearance.Design.Hint">
-        <item name="android:textSize">16sp</item>
-    </style>
 
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
-    <style name="toolbarTextStyle">
-        <item name="android:fontFamily">@font/dosis</item>
-        <item name="android:title">24sp</item>
-        <item name="android:titleTextStyle">@font/dosis_bold</item>
+    <style name="DosisBold24">
+        <item name="android:fontFamily">@font/dosis_bold</item>
+        <item name="android:textSize">24sp</item>
     </style>
+
+    <style name="Dosis24">
+        <item name="android:fontFamily">@font/dosis</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="DosisBold40">
+        <item name="android:fontFamily">@font/dosis_bold</item>
+        <item name="android:textSize">40sp</item>
+    </style>
+
+    <style name="Dosis14">
+        <item name="android:fontFamily">@font/dosis</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="DosisBold14">
+        <item name="android:fontFamily">@font/dosis_bold</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="Dosis18">
+        <item name="android:fontFamily">@font/dosis</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="DosisBold18">
+        <item name="android:fontFamily">@font/dosis_bold</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="Dosis20">
+        <item name="android:fontFamily">@font/dosis</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="DosisBold32">
+        <item name="android:fontFamily">@font/dosis_bold</item>
+        <item name="android:textSize">32sp</item>
+    </style>
+
+
+    <style name="FragmentDialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
 
 </resources>

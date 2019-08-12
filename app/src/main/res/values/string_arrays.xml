@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="introduction_questions">
+        <item>@string/hobies</item>
+        <item>@string/dream_job</item>
+        <item>@string/pets</item>
+        <item>@string/role_model</item>
+        <item>@string/nickname</item>
+        <item>@string/favorite_meal</item>
+        <item>@string/favorite_memory</item>
+        <item>@string/favorite_subject</item>
+        <item>@string/favorite_sport</item>
+        <item>@string/never_done</item>
+        <item>@string/favorite_color</item>
+        <item>@string/characteristic_i_love</item>
+        <item>@string/free_time</item>
+        <item>@string/tv_choice</item>
+    </string-array>
+</resources>

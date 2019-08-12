@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_quiz_instructions" />
+
+
+    <TextView
+        android:id="@+id/textView4"
+        style="@style/Dosis24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/time"
+        app:layout_constraintEnd_toStartOf="@+id/tvTimer"
+        app:layout_constraintTop_toTopOf="@+id/tvTimer" />
+
+    <TextView
+        android:id="@+id/tvTimer"
+        style="@style/DosisBold40"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="40dp"
+        android:gravity="center"
+        android:textColor="@color/textColorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="8" />
+
+
+    <TextView
+        android:id="@+id/tvQuestion"
+        style="@style/DosisBold24"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="50dp"
+        android:gravity="center"
+        android:textColor="@color/textColorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTimer" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvCorrect"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="70dp"
+        android:backgroundTint="@color/green"
+        app:layout_constraintEnd_toStartOf="@+id/cvWrong"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvQuestion">
+
+        <Button
+            android:id="@+id/btnCorrect"
+            style="@style/DosisBold18"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:text="@string/correct"
+            android:textColor="@color/white" />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tvCorrect"
+        style="@style/DosisBold40"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="0"
+        android:textColor="@color/green"
+        app:layout_constraintEnd_toEndOf="@+id/cvCorrect"
+        app:layout_constraintStart_toStartOf="@+id/cvCorrect"
+        app:layout_constraintTop_toBottomOf="@+id/cvCorrect" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvWrong"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="70dp"
+        android:backgroundTint="@color/red"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/cvCorrect"
+        app:layout_constraintTop_toBottomOf="@+id/tvQuestion">
+
+        <Button
+            android:id="@+id/btnWrong"
+            style="@style/DosisBold18"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:text="@string/wrong"
+            android:textColor="@color/white" />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tvWrong"
+        style="@style/DosisBold40"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="0"
+        android:textColor="@color/red"
+        app:layout_constraintEnd_toEndOf="@+id/cvWrong"
+        app:layout_constraintStart_toStartOf="@+id/cvWrong"
+        app:layout_constraintTop_toBottomOf="@+id/cvWrong" />
+
+    <include layout="@layout/layout_on_quiz_fnished" />
+</androidx.constraintlayout.widget.ConstraintLayout>
