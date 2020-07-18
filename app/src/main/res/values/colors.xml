@@ -16,5 +16,14 @@
     <color name="red">#99a20000</color>y
     <color name="green">#9900a200</color>
     <color name="background">#DADDEC</color>
+    <color name="answer_background_color">#aaFFE4C4</color>
+    <color name="green_transparent">#3300a200</color>
+    <color name="red_transparent">#33a20000</color>
+
+
+    <color name="tablayout_first_item_background">#F44336</color>
+    <color name="tablayout_second_item_background">#8BC34A</color>
+    <color name="tablayout_third_item_background">#03A9F4</color>
+    <color name="tablayout_fourth_item_background">#795548</color>
 
 </resources>

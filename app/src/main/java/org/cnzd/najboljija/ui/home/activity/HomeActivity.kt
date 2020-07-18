@@ -11,11 +11,11 @@ import io.reactivex.disposables.Disposable
 import kotlinx.android.synthetic.main.activity_home.*
 import kotlinx.android.synthetic.main.layout_loader.*
 import kotlinx.android.synthetic.main.layout_no_internet.*
+import org.cnzd.najboljija.ui.home.view_model.HomeVM
 import org.cnzd.najboljija.R
 import org.cnzd.najboljija.base.BaseActivity
 import org.cnzd.najboljija.common.utils.*
-import org.cnzd.najboljija.ui.home.view_model.HomeVM
-import org.cnzd.najboljija.ui.home.viewpager.PagerAdapterHome
+import org.cnzd.najboljija.ui.home.adapter.PagerAdapterHome
 import org.cnzd.najboljija.ui.login.activity.LoginActivity
 import org.koin.android.ext.android.inject
 import org.koin.androidx.viewmodel.ext.android.viewModel
@@ -53,9 +53,12 @@ class HomeActivity : BaseActivity() {
     private fun configureObservers() {
         viewModel.namesData.observe(this, Observer { data ->
             data?.let {
-                tv_MentorChildName.text = it
-                sharedPrefs.edit().putString(CHILD, it.split(" ")[0]).apply()
-                sharedPrefs.edit().putString(MENTOR, it.split(" ")[2]).apply()
+                val childName = it.getValue(resources.getString(R.string.child).decapitalize())
+                val mentorName = it.getValue(resources.getString(R.string.mentor).decapitalize())
+                val namesHeader = childName.split(" ")[0] +" "+resources.getString(R.string.and) +" "+ mentorName.split(" ")[0]
+                tv_MentorChildName.text = namesHeader
+                sharedPrefs.edit().putString(CHILD, childName).apply()
+                sharedPrefs.edit().putString(MENTOR, mentorName).apply()
             }
         })
     }

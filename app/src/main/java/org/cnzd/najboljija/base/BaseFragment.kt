@@ -10,6 +10,7 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import com.jakewharton.rxbinding2.view.RxView
 import io.reactivex.Observable
+import io.reactivex.Single
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.disposables.Disposable
 import kotlinx.android.synthetic.main.layout_no_internet.*
@@ -18,6 +19,7 @@ import org.cnzd.najboljija.common.utils.*
 import org.cnzd.najboljija.ui.login.activity.LoginActivity
 import org.koin.android.ext.android.inject
 import org.koin.core.parameter.parametersOf
+import org.reactivestreams.Publisher
 
 
 abstract class BaseFragment<T : BaseViewModel> : Fragment() {
@@ -61,6 +63,23 @@ abstract class BaseFragment<T : BaseViewModel> : Fragment() {
         addDisposable(observable.subscribe({}, { it.printStackTrace() }))
     }
 
+    protected fun <T> Single<T>.longSubscribe() {
+        val single =
+                this.doOnSubscribe { loaderLayout?.toVisible() }
+                        .doOnError { loaderLayout?.toInvisible(); context!!.showToast(getString(org.cnzd.najboljija.R.string.error_occured))}
+                        .doOnSuccess { loaderLayout?.toInvisible(); noInternetLayout?.toInvisible() }
+
+        addDisposable(single.subscribe({}, { it.printStackTrace() }))
+    }
+
+    private fun handleError(throwable: Throwable) {
+        when (throwable.message) {
+            UNABLE_TO_RESOLVE_HOST -> noInternetLayout?.toVisible()
+            HTTP_401 -> logOut()
+            else -> context!!.showToast(getString(org.cnzd.najboljija.R.string.error_occured))
+        }
+    }
+
     private fun addDisposable(disposable: Disposable) {
         if (compositeDisposable.isDisposed)
             compositeDisposable = CompositeDisposable()
@@ -72,13 +91,6 @@ abstract class BaseFragment<T : BaseViewModel> : Fragment() {
         compositeDisposable.dispose()
     }
 
-    private fun handleError(throwable: Throwable) {
-        when (throwable.message) {
-            UNABLE_TO_RESOLVE_HOST -> noInternetLayout?.toVisible()
-            HTTP_401 -> logOut()
-            else -> context!!.showToast(getString(org.cnzd.najboljija.R.string.error_occured))
-        }
-    }
 
     private fun logOut() {
         sharedPrefs.putBoolean(KEY_IS_LOGGED_IN, false)

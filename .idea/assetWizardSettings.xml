@@ -57,7 +57,7 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="url" value="jar:file:/C:/Program%20Files/Android/Android%20Studio/plugins/android/lib/android.jar!/images/material_design_icons/action/ic_done_all_black_24dp.xml" />
+                                      <entry key="url" value="jar:file:/C:/Program%20Files/Android/Android%20Studio/plugins/android/lib/android.jar!/images/material_design_icons/image/ic_photo_album_black_24dp.xml" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -67,12 +67,10 @@
                         </option>
                         <option name="values">
                           <map>
-                            <entry key="color" value="ffc82b" />
-                            <entry key="height" value="50" />
-                            <entry key="outputName" value="ic_completed" />
+                            <entry key="color" value="ababab" />
+                            <entry key="outputName" value="ic_photo_album" />
                             <entry key="overrideSize" value="true" />
-                            <entry key="sourceFile" value="C:\Users\Terezija\Downloads\vector.svg" />
-                            <entry key="width" value="50" />
+                            <entry key="sourceFile" value="C:\Users\Terezija\Downloads\kissclipart-question-mark-black-and-white-clipart-question-mar-5dd9fd08e3f0629a.svg" />
                           </map>
                         </option>
                       </PersistentState>

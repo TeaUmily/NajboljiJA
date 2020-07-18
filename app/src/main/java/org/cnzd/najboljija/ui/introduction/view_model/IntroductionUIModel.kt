@@ -1,6 +1,6 @@
 package org.cnzd.najboljija.ui.introduction.view_model
 
-data class IntroductionAnswersdata(
+data class IntroductionAnswersResponse(
         val hobiji: String,
         val idealno_zanimanje: String,
         val ljubimci: String,
@@ -17,7 +17,7 @@ data class IntroductionAnswersdata(
         val tv_izbor: String
 )
 
-fun provideAnswersListFromData(response: IntroductionAnswersdata): MutableList<String> {
+fun provideAnswersListFromData(response: IntroductionAnswersResponse): MutableList<String> {
     val list = mutableListOf<String>()
     list.apply {
         add(response.hobiji)
@@ -39,4 +39,4 @@ fun provideAnswersListFromData(response: IntroductionAnswersdata): MutableList<S
 }
 
 fun provideAnswersDataFromList(list: MutableList<String>)
-        = IntroductionAnswersdata(list[0], list[1], list[2], list[3], list[4], list[5], list[6], list[7], list[8], list[9], list[10], list[11], list[12], list[13])
+        = IntroductionAnswersResponse(list[0], list[1], list[2], list[3], list[4], list[5], list[6], list[7], list[8], list[9], list[10], list[11], list[12], list[13])

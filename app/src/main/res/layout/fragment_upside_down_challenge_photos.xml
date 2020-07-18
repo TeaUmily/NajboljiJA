@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <TextView
+            android:id="@+id/tvFirstIllusion"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:background="@color/tablayout_first_item_background"
+            android:fontFamily="@font/dosis_bold"
+            android:textSize="@dimen/btn_text_size"
+            android:layout_height="match_parent"
+            android:text="@string/photo_one"
+            />
+
+        <TextView
+            android:id="@+id/tvSecondIllusion"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:background="@color/tablayout_second_item_background"
+            android:fontFamily="@font/dosis_bold"
+            android:textSize="@dimen/small_text_size"
+            android:layout_height="match_parent"
+            android:text="@string/photo_two"
+            android:layout_weight="1"
+            />
+
+        <TextView
+            android:id="@+id/tvThirdIllusion"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:background="@color/tablayout_third_item_background"
+            android:fontFamily="@font/dosis_bold"
+            android:textSize="@dimen/small_text_size"
+            android:layout_height="match_parent"
+            android:text="@string/photo_three"
+            android:layout_weight="1"
+            />
+
+        <TextView
+            android:id="@+id/tvFourthIllusion"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAllCaps="true"
+            android:background="@color/tablayout_fourth_item_background"
+            android:fontFamily="@font/dosis_bold"
+            android:textColor="@color/white"
+            android:textSize="@dimen/small_text_size"
+            android:layout_height="match_parent"
+            android:text="@string/photo_four"
+            />
+
+
+    </LinearLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </androidx.viewpager.widget.ViewPager>
+
+    <include layout="@layout/layout_loader"/>
+    <include layout="@layout/layout_no_internet"/>
+
+</LinearLayout>

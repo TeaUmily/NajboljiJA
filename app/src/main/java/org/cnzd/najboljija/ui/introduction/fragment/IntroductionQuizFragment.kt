@@ -9,7 +9,7 @@ import kotlinx.android.synthetic.main.layout_on_quiz_fnished.*
 import kotlinx.android.synthetic.main.layout_quiz_instructions.*
 import org.cnzd.najboljija.R
 import org.cnzd.najboljija.base.BaseFragment
-import org.cnzd.najboljija.common.interactor.addSchedulers
+import org.cnzd.najboljija.networking.interactor.addSchedulers
 import org.cnzd.najboljija.common.utils.toInvisible
 import org.cnzd.najboljija.common.utils.toVisible
 import org.cnzd.najboljija.ui.introduction.view_model.IntroductionVM
@@ -72,7 +72,6 @@ class IntroductionQuizFragment : BaseFragment<IntroductionVM>() {
             activity!!.onBackPressed()
         }
     }
-
 
     private fun getObservable(): Observable<Long> {
         return Observable.interval(1, TimeUnit.SECONDS)

@@ -14,3 +14,4 @@ data class LoginResponse(val localId: String = "",
                          val refreshToken: String = "",
                          val expiresIn: String = ""
 )
+

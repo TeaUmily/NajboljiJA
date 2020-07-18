@@ -29,8 +29,8 @@ class IntroductionLandingFragment : BaseFragment<IntroductionVM>() {
         val sub3 = viewModel.getMentorAnswers()
         Observable.concat(sub1, sub2, sub3).longSubscribe()
 
-        tvChildName.text = sharedPrefs.getString(CHILD, getString(R.string.child))
-        tvMentorName.text = sharedPrefs.getString(MENTOR, getString(R.string.mentor))
+        tvChildName.text = sharedPrefs.getString(CHILD, getString(R.string.child))!!.split(" ")[0]
+        tvMentorName.text = sharedPrefs.getString(MENTOR, getString(R.string.mentor))!!.split(" ")[0]
 
         initListeners()
         initObservers()

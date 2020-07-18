@@ -21,9 +21,9 @@
     <string name="start_quiz">ZAPOČNI KVIZ</string>
     <string name="your_answer">Upiši odgovor</string>
     <string name="save_answers">Spremi odgovore</string>
-    <string name="empty_fields">Email i lozinka nisu uneseni!</string>
-    <string name="empty_email_field">Email nije unesen!</string>
-    <string name="empty_password_field">Lozinka nije unesena!</string>
+    <string name="empty_fields">Unesite email i lozinku!</string>
+    <string name="empty_email_field">Unesite email!</string>
+    <string name="empty_password_field">Unesite lozinku!</string>
     <string name="no_internet_connection">Nema internetske konekcije.</string>
     <string name="no_internet">Nema interneta!</string>
     <string name="error_occured">Dogodila se pogreška.</string>
@@ -45,6 +45,7 @@
     <string name="quiz_instructions_text">Osoba čiji je kviz odabran postavlja pitanja te označuje je li dan odgovor točan ili netočan. Za svako pitanje na raspolaganju je 8 sekundi. Započni kviz i dobro se zabavi!</string>
     <string name="challenge_completed">IZAZOV ZAVRŠEN</string>
     <string name="bravo">BRAVO!</string>
+    <string name="and"> i </string>
 
     //INTRODUCTION
     <string name="introduction_description">Kažu da upoznavanje i nije\nbaš lako, zato odgovori na\nova pitanja i vidjet ćeš da\nto ne mora uvijek biti tako!</string>
@@ -61,21 +62,88 @@
     <string name="nickname">Svi me zovu nadimkom…</string>
     <string name="favorite_meal">Za ručak najviše volim…</string>
     <string name="favorite_memory">Uvijek se rado sjećam…</string>
-    <string name="favorite_subject">Od svih najdraži šk predmet mi je…</string>
+    <string name="favorite_subject">Najdraži šk predmet mi je…</string>
     <string name="favorite_sport">Sport koji najviše volim je…</string>
     <string name="never_done">Nisam nikad…</string>
     <string name="favorite_color">Omiljena boja mi je…</string>
     <string name="characteristic_i_love">Osobina koju volim na sebi je…</string>
     <string name="free_time">Slobodno vrijeme provodim tako da…</string>
-    <string name="tv_choice">Na TV-u najrađe gledam…</string>
+    <string name="tv_choice">Na TV-u najradije gledam…</string>
 
     //PHOTO CHALLENGE
     <string name="photo_challenge_title">FOTO IZAZOV</string>
     <string name="photo_challenge_description">Svaka slika izazov je jedan,\nnabaci osmjeh i za razne\nsituacije budi spreman!\n</string>
+    // tasks
+    <string name="with_yellow_car">Sa žutim automobilom</string>
+    <string name="with_animal">Sa životinjom</string>
+    <string name="on_bridge">Na mostu</string>
+    <string name="with_sculpture">Sa skulpturom (u istoj pozi)</string>
+    <string name="with_two_grandpas">Sa dvije bake ili dva djeda</string>
+    <string name="on_invisible_chair">Na nevidljivoj stolici</string>
+    <string name="with_policeman">Sa policajcem</string>
+    <string name="with_zebra_sample">S motivom zebre (nečim zebrastim)</string>
+    <string name="with_doll">S lutkom na izlogu koja na sebi ima nešto plavo</string>
+    <string name="image_saved_successfully">Slika je uspješno spremljena</string>
+    <string name="photo_challenge_completed_message">Ispunili ste svih 9 zadataka i time završili ovaj izazov. Sve slike vam ostaju dostupne unutar aplikacije te ih možete pokazati prijateljima. Sretno dalje! </string>
 
 
     //LOOK UPSIDE DOWN
     <string name="look_upside_down_title">POGLED NAOPAČKE</string>
     <string name="look_upside_down_description">Kad različite slike budeš\nvidio sada ti zapiši što ti\nprvo na pamet pada!\n</string>
+    <string name="challenge_state">Stanje izazova</string>
+    <string name="take_photo">USLIKAJ</string>
+    <string name="album">ALBUM</string>
+    <string name="save_photo">SPREMI SLIKU</string>
+    <string name="photos">slike</string>
+    <string name="task">zadatak</string>
+    <string name="show_answer">Pokaži odgovor</string>
+    <string name="how_many_legs">Koliko nogu vidiš na slici?</string>
+    <string name="elephant_legs_answer">3,4,5 nogu... tko će ga znati, svatko vidi drugačije!</string>
+    <string name="what_do_you_see">Što vidiš na slici?</string>
+    <string name="some_see_face_some_vase">Jedni vide vazu, drugi vide dva lica - svi su u pravu!</string>
+    <string name="horn_player_or_woman_face">Trubač ili lice žene - sasvim je svejedno!</string>
+    <string name="discussion">Rasprava</string>
+    <string name="photo_one">Slika 1</string>
+    <string name="photo_two">Slika 2</string>
+    <string name="photo_three">Slika 3</string>
+    <string name="photo_four">Slika 4</string>
+    <string name="illusion_duck_rabbit">iluzija_patka_zec</string>
+    <string name="illusion_elephant">iluzija_slon</string>
+    <string name="illusion_woman_player">iluzija_trubac_zena</string>
+    <string name="illusion_vase_face">iluzija_vaza_lice</string>
+    <string name="child_answers">dijete_odgovor</string>
+    <string name="mentor_answer">mentor_odgovor</string>
+    <string name="fill_both_fields">Popunite oba polja</string>
+    <string name="rabbit_duck_one_animal">Zec i patka u jednoj životinji!</string>
+    <string name="how_many_perspectives_exists">Koliko perspektiva postoji?</string>
+    <string name="why_it_matters_at_all">Zašto je to uopće važno?</string>
+    <string name="put_check_mark">Ako ste porazgovarali o pitanjima stavite kvačicu</string>
+    <string name="upside_down_first_answer">Važno je imati svoje mišljenje i zauzeti neki stav, no imajmo na umu da postoje različiti pogledi na istu stvar ili situaciju. Svaku situaciju ili problem možemo sagledati iz nekog drugog kuta!</string>
+    <string name="upside_down_second_answer">Na taj način možemo bolje upoznati nekoga, razumjeti nekoga, slagati se s drugima, raspravljati o nečemu na primjeren način i više učimo.</string>
+    <string name="upside_down_challenge_completed_message">Prošli ste sva tri koraka i tako odradili ovaj izazov. Nadamo se da ste kroz njega nešto i naučili. Svaka čast i sretno dalje!  </string>
+
+    // EXPRESS YOURSELF
+    <string name="express_yourself_title">Reci što misliš</string>
+
+    // WITHOU SHAME
+    <string name="without_shame">Bez srama</string>
+    <string name="without_shame_description">Kada ti treba pomoć, zatraži ju od ljudi; pitaj hrabro, bez srama i ljubazan budi.</string>
+
+    // ACTIVE LISTENER
+    <string name="active_listener">Aktivni slušač</string>
+    <string name="active_listener_description">Slušati i čuti nije isto, znaj,\nkad slušaš,\n pažnju sugovorniku daj!</string>
+
+    // STAND OUT FOR YOURSELF
+    <string name="stand_out_for_yourself">Zauzmi se za sebe</string>
+
+    // MAKE RIGHT DECISION
+    <string name="make_right_decision">Donesi pravu odluku</string>
+    <string name="make_right_decision_description">Ako na vrijeme pravu odluku doneseš ti, za posljedice se ne moraš brinuti!</string>
+
+    // DEAL WITH FEELINGS
+    <string name="deal_with_feelings">Osjećaji - svi ih imamo</string>
+    <string name="deal_with_feelings_description">Osjećaja ima mnogo u srcu tvome, jedni te vesele, drugi slome!</string>
+    <string name="stand_out_for_yourself_description">Reci pravu stvar u pravo vrijeme, zauzmi se za sebe bez straha i dileme!</string>
+
 
 </resources>

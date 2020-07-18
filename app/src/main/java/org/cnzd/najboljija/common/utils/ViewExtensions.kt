@@ -2,8 +2,10 @@ package org.cnzd.najboljija.common.utils
 
 import android.text.Editable
 import android.text.TextWatcher
+import android.util.TypedValue
 import android.view.View
 import android.widget.EditText
+import android.widget.TextView
 
 
 inline fun EditText.onTextChanged(crossinline onTextChangeHandler: (String) -> Unit) {

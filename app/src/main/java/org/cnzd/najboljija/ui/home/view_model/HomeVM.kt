@@ -3,12 +3,12 @@ package org.cnzd.najboljija.ui.home.view_model
 import androidx.lifecycle.MutableLiveData
 import io.reactivex.Observable
 import org.cnzd.najboljija.base.BaseViewModel
-import org.cnzd.najboljija.common.interactor.Interactor
+import org.cnzd.najboljija.networking.interactor.Interactor
 
 
 class HomeVM(private val interactor: Interactor) : BaseViewModel() {
 
-    val namesData = MutableLiveData<String>()
+    val namesData = MutableLiveData<Map<String, String>>()
     val challengesState = MutableLiveData<Map<String, Boolean>>()
 
     var tokenId:String? = null
@@ -22,7 +22,6 @@ class HomeVM(private val interactor: Interactor) : BaseViewModel() {
     fun getHomeData(): Observable<Any> = Observable.concat(getNamesData(), getChallengesStateData())
 
     fun getNamesData() = interactor.getNames(localId!!, tokenId!!)
-            .map { it.getValue("dijete") + " i " + it.getValue("mentor") }
             .doOnNext { namesData.value = it }
 
     fun getChallengesStateData() = interactor.getChallengesState(localId!!, tokenId!!)

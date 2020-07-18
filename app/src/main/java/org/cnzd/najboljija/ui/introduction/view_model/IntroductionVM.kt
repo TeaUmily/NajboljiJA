@@ -2,7 +2,7 @@ package org.cnzd.najboljija.ui.introduction.view_model
 
 import androidx.lifecycle.MutableLiveData
 import org.cnzd.najboljija.base.BaseViewModel
-import org.cnzd.najboljija.common.interactor.Interactor
+import org.cnzd.najboljija.networking.interactor.Interactor
 import org.cnzd.najboljija.common.utils.INTRODUCTION
 
 class IntroductionVM(private val interactor: Interactor) : BaseViewModel() {

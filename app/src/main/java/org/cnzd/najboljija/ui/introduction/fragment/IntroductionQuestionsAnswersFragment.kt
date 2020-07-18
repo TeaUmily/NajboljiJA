@@ -18,7 +18,7 @@ import org.koin.android.ext.android.inject
 import org.koin.androidx.viewmodel.ext.android.sharedViewModel
 import org.koin.core.parameter.parametersOf
 
-class IntroductionQuestionsAnswersFragment : BaseFragment<IntroductionVM>(), OnTickClick {
+class IntroductionQuestionsAnswersFragment : BaseFragment<IntroductionVM>(), TickClick {
 
     private val controller by inject<AnswersDataController> { parametersOf(this) }
     override val viewModel: IntroductionVM by sharedViewModel()
@@ -100,11 +100,11 @@ class IntroductionQuestionsAnswersFragment : BaseFragment<IntroductionVM>(), OnT
     }
 }
 
-interface OnTickClick {
+interface TickClick {
     fun onClick(position: Int, answer: String)
 }
 
-class AnswersDataController(private val listener: OnTickClick) : TypedEpoxyController<Map<String, String>>() {
+class AnswersDataController(private val listener: TickClick) : TypedEpoxyController<Map<String, String>>() {
 
     var i = 0
     override fun buildModels(data: Map<String, String>) {

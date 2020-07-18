@@ -16,4 +16,16 @@
         <item>@string/free_time</item>
         <item>@string/tv_choice</item>
     </string-array>
+
+    <string-array name="photo_challenge_tasks">
+        <item>@string/with_yellow_car</item>
+        <item>@string/with_animal</item>
+        <item>@string/on_bridge</item>
+        <item>@string/with_sculpture</item>
+        <item>@string/with_two_grandpas</item>
+        <item>@string/on_invisible_chair</item>
+        <item>@string/with_policeman</item>
+        <item>@string/with_zebra_sample</item>
+        <item>@string/with_doll</item>
+    </string-array>
 </resources>
